@@ -1,0 +1,19 @@
+{
+  "authors" : [
+    "AnaTofuZ"
+  ],
+  "build-depends" : [ ],
+  "depends" : [ ],
+  "description" : "blah blah blah",
+  "license" : "Artistic-2.0",
+  "name" : "Acme::MadokaMagica",
+  "perl" : "6.c",
+  "provides" : {
+    "Acme::MadokaMagica" : "lib/Acme/MadokaMagica.pm6"
+  },
+  "resources" : [ ],
+  "source-url" : "",
+  "tags" : [ ],
+  "test-depends" : [ ],
+  "version" : "0.0.1"
+}
