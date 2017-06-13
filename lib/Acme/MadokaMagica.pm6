@@ -14,11 +14,12 @@ Acme::MadokaMagica - blah blah blah
 
 =head1 DESCRIPTION
 
-Acme::MadokaMagica is ...
+Acme::MadokaMagica is getting Madoka Magica infomation.
+This module is original Perl5 module.
 
 =head1 AUTHOR
 
-AnaTofuZ <e155730@ie.u-ryukyu.ac.jp>
+AnaTofuZ <anatofuz@gmail.com>
 
 =head1 COPYRIGHT AND LICENSE
 
