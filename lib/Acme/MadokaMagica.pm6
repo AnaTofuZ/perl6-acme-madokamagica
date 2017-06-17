@@ -1,6 +1,36 @@
 use v6.c;
 unit class Acme::MadokaMagica:ver<0.0.1>;
 
+class Acme::MadokaMagica{
+   
+    has $.name;
+
+    my @KyoSaya = < SakuraKyoko MikiSayaka>;
+    my @MadoHomu = < KanameMadoka AkemiHomura>;
+    my @Alone = < TomoeMami>;
+
+    my %mem = (
+        mami => "TomoeMami",
+        madoka => "KanameMadoka",
+        sayaka => "MikiSayaka",
+        kyoko => "SakuraKyoko",
+#        kyosaya => @KyoSaya,
+#        madohomu => @MadoHomu,
+#        alone => @Alone,
+    );
+
+    method new ($name){
+        my $human =%mem<$name>;
+        my $pkg = "Acme::MadokaMagica::Character::$human";
+        my @members;
+        if(EVAL("use $pkg")){
+            @members.push:$pkg;
+        }
+        return @members;
+    }
+
+}
+
 
 =begin pod
 
